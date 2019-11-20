@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simpson - Trabalho 2</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function calculo(){
+			var valor1=Number(document.getElementById("val1").value);
+			var valor2=Number(document.getElementById("val2").value);
+			var valor3=Number(document.getElementById("val3").value);
+			var valor4=Number(document.getElementById("val4").value);
+			var valor5=Number(document.getElementById("val5").value);
+			var valor6=Number(document.getElementById("val6").value);
+			var valor7=Number(document.getElementById("val7").value);
+			var valor8=Number(document.getElementById("val8").value);
+			var valor9=Number(document.getElementById("val9").value);
+
+			document.getElementById("result1").value = valor1*1;
+			document.getElementById("result2").value = valor2*4;
+			document.getElementById("result3").value = valor3*2;
+			document.getElementById("result4").value = valor4*4;
+			document.getElementById("result5").value = valor5*2;
+			document.getElementById("result6").value = valor6*4;
+			document.getElementById("result7").value = valor7*2;
+			document.getElementById("result8").value = valor8*4;
+			document.getElementById("result9").value = valor9*1;
+
+			var somaTotal=1/3*((valor1*1)+(valor2*4)+(valor3*2)+(valor4*4)+(valor5*2)+(valor6*4)+(valor7*2)+(valor8*4)+(valor9*1));
+
+			document.getElementById("somaTotal").value = somaTotal;
+		}
+	</script>
+</head>
+<body>
+	<form name="calcular">
+		<table border="1">
+			<tr>
+				<th>Quantidades</th>
+				<th>Valores</th>
+				<th>Valores Calculados</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><input type="text" name="valor" id="val1"></td>
+				<td><input type="text" name="result" id="result1" disabled></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><input type="text" name="valor" id="val2"></td>
+				<td><input type="text" name="result" id="result2" disabled></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><input type="text" name="valor" id="val3"></td>
+				<td><input type="text" name="result" id="result3" disabled></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><input type="text" name="valor" id="val4"></td>
+				<td><input type="text" name="result" id="result4" disabled></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><input type="text" name="valor" id="val5"></td>
+				<td><input type="text" name="result" id="result5" disabled></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td><input type="text" name="valor" id="val6"></td>
+				<td><input type="text" name="result" id="result6" disabled></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td><input type="text" name="valor" id="val7"></td>
+				<td><input type="text" name="result" id="result7" disabled></td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td><input type="text" name="valor" id="val8"></td>
+				<td><input type="text" name="result" id="result8" disabled></td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td><input type="text" name="valor" id="val9"></td>
+				<td><input type="text" name="result" id="result9" disabled></td>
+			</tr>
+		</table>
+
+		<br/><br/>
+
+		<table border="1">
+			<tr>
+				<th>Valor Total</th>
+			</tr>
+			<tr>
+				<td><input type="text" name="somaTotal" id="somaTotal" disabled></td>
+			</tr>
+		</table>
+
+		<br/><br/>
+
+		<input type="button" name="submit" value="Receber Resultados" onclick="calculo();">
+	</form>
+</body>
+</html>
